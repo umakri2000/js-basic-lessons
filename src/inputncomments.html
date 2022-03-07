@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-and-components</title>
+</head>
+<body>
+    <input placeholder="enter your name" id="user input" size=60>
+    <button onclick='userSubmit()'>submit</button>
+    <br>
+    <p>
+        <input placeholder="enter your city here"
+        id='txt2'
+        onKeyup="userSubmitA('txt2')">
+    </p>
+    <div id ='result'></div>
+    <script type='text/javascript'>
+        document.writeln('<p>Hello</p>');
+        function userSubmit(){
+            const UI =document.getElementById('user input').value;
+            document.getElement('result').innerHTML='You typed :${ui}';
+        }
+        function userSubmitA(v1){
+            const ui= document.getElementById(v1).value;
+            document.getElementById('result').innerHTML='You typed :${ui}';
+        }
+    </script>
+    
+        <script type="text/javascript">
+            let x=5;
+         /* The browser will break the </script> Everything from tag forward is now being processeed as html  this is a bad thing !
+            to avoid this you need to avoid using this tag anywhere i javascript and if 
+            you must have it ,you should break the stringout like this'</scr'+'ipt>'
+            document.writeln('</scr'+'ipt');*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variablescope</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var vGlobal = 'this is global';
+       // console.log(vGlobal);
+
+        function scopeFunction(){
+              var alsoGlobal='This is also global';
+             var vNotGlobal = 'this is private and scope is within function';
+            //console.log(alsoGlobal);
+            function subFunction(){
+                 stillGlobal='no var keyword so this is global';
+                var isPrivate = 'this is private to subfunction';
+                console.log(vNotGlobal);
+                
+            }
+            subFunction();
+            //console.log(isPrivate);
+            console.log(stillGlobal);
+
+        }
+        console.log(vGlobal);
+        //console.log(alsoGlobal); (not visible because its scope is in scope function only)
+        //console.log(vNotGlobal);
+        scopeFunction();
+        console.log(stillGlobal);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "js-basic-lessons",
+  "version": "1.0.0",
+  "description": "java-lesso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umakri2000/js-basic-lessons.git"
+  },
+  "author": "umakrishnan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umakri2000/js-basic-lessons/issues"
+  },
+  "homepage": "https://github.com/umakri2000/js-basic-lessons#readme",
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}

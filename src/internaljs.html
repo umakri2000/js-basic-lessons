@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internaljs</title>
+</head>
+<body>
+    <div>
+        Run the java script tag at the end before the closing "body" tag else the dom returns a <b>null</b><object data="" type=""></object>
+    </div>
+    <script>
+        console.log('Before');
+        const p1=document.querySelector('p');
+        console.log(p1);
+    </script>
+    <p>HI there , how are you</p>
+    <p>This is the second para in inline_js</p>
+    <script></script>
+    
+</body>
+</html>
